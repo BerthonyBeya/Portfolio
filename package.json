@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "vanillajs-scrollspy": "^2.0.3"
