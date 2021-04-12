@@ -62,7 +62,6 @@ html {
     }
 }
 
-
 /* VARIABLES */
 :root {
     --h1-color: #616161;
@@ -203,8 +202,9 @@ body {
 .header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to left, rgba(27, 36, 47, 0.89), rgba(27, 36, 47, 0.89)),
-        url("../images/background.jpg");
+    background-image: linear-gradient(to left, rgba(27, 36, 47, 0.89), rgba(27, 36, 47, 0.89))
+        /* ,
+        url("../images/background.jpg") */;
     background-size: contain;
     background-position: center;
 
@@ -213,6 +213,14 @@ body {
     justify-content: center;
     align-items: center;
     //transition: all 1s;
+
+    // header Image
+    & > img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
 
     &__font-1,
     &__font-2 {
